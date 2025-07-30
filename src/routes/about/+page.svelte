@@ -8,7 +8,7 @@
     import CodeBlock from "$lib/text/code-block.svelte";
 </script>
 
-<div class="w-screen max-w-[900px]">
+<div class="mt-25 w-screen max-w-[900px]">
     <Heading>Psychological Background</Heading>
     <Section>
         <Subsection>
