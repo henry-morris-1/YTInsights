@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" class="bg-neutral-900 text-white">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="color-scheme" content="dark" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="./_app/immutable/assets/0.CbCUHQ82.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.Djj15I8U.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/D6qPJkkj.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/8Bh1oUic.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/B76aRbw-.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/D4YDfrxN.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.C0S6-uK7.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/DsnmJJEf.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/BteXHhIK.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.CU7PEANW.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/DXyYrGeO.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/3.B99iOb3x.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div><!--[--><!--[--><!----><header class="fixed top-0 left-0 right-0 flex justify-center"><div class="self-center flex gap-4 py-4 px-8 backdrop-blur-md rounded-b-xl"><img src="/yt-icon.webp" alt="Icon" class="h-[30px]"/> <span class="text-xl font-bold">YouTube Insights</span></div></header><!----> <main class="flex flex-col items-center"><!----><div class="w-screen max-w-[900px]"><div class="w-full mb-4"><h1 class="text-4xl font-bold"><!---->Psychological Background<!----></h1> <div class="h-0.5 w-full bg-neutral-300"></div></div><!----> <div class="flex flex-col mb-10"><div class="flex flex-col gap-4 mb-8"><p><!---->The psychological impact of thumbnails and titles plays a critical role in shaping viewer behavior on YouTube.
+                Visual features like brightness, edge density, and color contrast capture attention by leveraging principles of
+                visual saliency—our brains are hard-wired to notice high-contrast or detailed areas quickly. Titles, meanwhile,
+                trigger cognitive biases through emotional language, urgency, or curiosity—such as in the use of clickbait phrasing
+                or questions—which tap into the psychological phenomenon known as the “curiosity gap.” These elements influence not
+                only whether users notice a video but whether they feel compelled to click, making them central to predicting virality
+                and optimizing content performance before a video is even published.<!----></p><!----></div><!----> <div class="flex flex-col gap-4 mb-8"><div class="p-6 bg-neutral-700 rounded-lg font-semibold"><!---->The visual complexity of an image, as perceived by edge density and local color contrast, increases the likelihood
+                of gaze fixation in the first few milliseconds.<!----> <div class="mt-3 italic font-light text-neutral-300">– Nuthmann &amp; Henderson, 2010</div></div><!----></div><!----><!----></div><!----> <div class="w-full mb-4"><h1 class="text-4xl font-bold"><!---->Important Feature Genres<!----></h1> <div class="h-0.5 w-full bg-neutral-300"></div></div><!----> <div class="flex flex-col mb-10"><h2 class="text-2xl font-bold mb-2"><!---->Clickbait Score Calculation<!----></h2><!----> <div class="flex flex-col gap-4 mb-8"><div class="p-6 bg-neutral-700 rounded-lg text-sm font-mono whitespace-pre-wrap"><!---->def compute_clickbait_score(text: str) -> float:
+                    clickbait_words = hack
+                    words = text.split()
+                    clickbait_score = sum(word.lower() in clickbait_words for word in words)
+                    return clickbait_score<!----></div><!----> <p><!---->The clickbait score is a simple metric that counts the number of clickbait words in a given text.
+                It can be useful for identifying potentially misleading or sensational content.<!----></p><!----><!----></div><!----> <h2 class="text-2xl font-bold mb-2"><!---->Readability Score Calculation<!----></h2><!----> <div class="flex flex-col gap-4 mb-8"><div class="p-6 bg-neutral-700 rounded-lg text-sm font-mono whitespace-pre-wrap"><!---->def flesch_reading_ease(text):
+                    sentences = re.split(r'[.!?]+', text)
+                    sentences = [s.strip() for s in sentences if s.strip()]
+
+                    words = re.findall(r'\w+', text)
+                    num_sentences = max(1, len(sentences))
+                    num_words = max(1, len(words))
+                    num_syllables = sum(count_syllables(word) for word in words)
+
+                    asl = num_words / num_sentences  # Average sentence length
+                    asw = num_syllables / num_words  # Average syllables per word
+
+                    # Flesch Reading Ease formula
+                    score = 206.835 - (1.015 * asl) - (84.6 * asw)
+                    return round(score, 2)<!----></div><!----> <p><!---->The Flesch Reading Ease score is a widely used readability test that evaluates the complexity of English texts.
+                It considers the average sentence length and the average number of syllables per word to produce a score between 0 and 100,
+                where higher scores indicate easier readability.<!----></p><!----><!----></div><!----> <h2 class="text-2xl font-bold mb-2"><!---->Training Data<!----></h2><!----> <div class="flex flex-col gap-4 mb-8"><p><!---->The training data consists of over 100,000 YouTube videos taken from channels serving a broad variety of genres in each significant
+                subscriber range that have been judged by human experts to be “reliant on the YouTube algorithm.” This ensures the model learns
+                from content aiming to optimize for virality and engagement rather than content that performs purely due to an already-established
+                audience or brand.<!----></p><!----></div><!----> <h2 class="text-2xl font-bold mb-2"><!---->Model Architecture<!----></h2><!----> <div class="flex flex-col gap-4 mb-8"><p><!---->The model supporting this tool's insights is trained to recognize patterns in pre-publication metadata that correlate with higher
+                likelihoods of content performance. It leverages a Random Forest classifier enhanced with SMOTE (Synthetic Minority Oversampling
+                Technique) to address class imbalance while focusing on psychologically and behaviorally relevant features.<!----></p><!----></div><!----><!----></div><!----></div><!----><!----></main><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_1y0byxq = {
+						base: new URL(".", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("./_app/immutable/entry/start.Djj15I8U.js"),
+						import("./_app/immutable/entry/app.C0S6-uK7.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 3],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
