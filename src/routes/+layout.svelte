@@ -7,6 +7,6 @@
 
 <Header />
 
-<main class="h-screen flex flex-col items-center justify-center">
+<main class="h-screen flex flex-col items-center">
 	{@render children()}
 </main>
