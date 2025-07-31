@@ -1,4 +1,5 @@
 <script>
+	import { goto } from "$app/navigation";
 	import ContainerCentered from "$lib/containers/container-centered.svelte";
 	import ContainerHighlight from "$lib/containers/container-highlight.svelte";
 
