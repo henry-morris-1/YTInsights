@@ -23,6 +23,55 @@
         }, 10000);
     }, 5000);
 </script>
+<style>
+    .animate-rise-a {
+        animation: 10s ease infinite;
+    }
+    @keyframes rise-a {
+        0%, 100% {
+            bottom: 50%;
+            translate: 0 50%;
+            opacity: 1;
+        }
+        40% {
+            bottom: 50%;
+            translate: 0 50%;
+            opacity: 1;
+        }
+        50% {
+            bottom: 95%;
+            opacity: 0;
+        }
+        90% {
+            bottom: 5%;
+            opacity: 0;
+        }
+    }
+
+    .animate-rise-b {
+        animation: 10s ease infinite;
+    }
+    @keyframes rise-b {
+        0%, 100% {
+            bottom: 95%;
+            opacity: 0;
+        }
+        40% {
+            bottom: 5%;
+            opacity: 0;
+        }
+        50% {
+            bottom: 50%;
+            translate: 0 50%;
+            opacity: 1;
+        }
+        90% {
+            bottom: 50%;
+            translate: 0 50%;
+            opacity: 1;
+        }
+    }
+</style>
 
 <ContainerCentered>
     <div class="w-screen max-w-[600px] text-2xl font-semibold">

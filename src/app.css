@@ -2,51 +2,7 @@
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
-@theme {
-  --animate-rise-a: rise-a 10s ease infinite;
-  @keyframes rise-a {
-    0%, 100% {
-      bottom: 50%;
-      translate: 0 50%;
-      opacity: 1;
-    }
-    40% {
-      bottom: 50%;
-      translate: 0 50%;
-      opacity: 1;
-    }
-    50% {
-      bottom: 95%;
-      opacity: 0;
-    }
-    90% {
-      bottom: 5%;
-      opacity: 0;
-    }
-  }
-
-  --animate-rise-b: rise-b 10s ease infinite;
-  @keyframes rise-b {
-    0%, 100% {
-      bottom: 95%;
-      opacity: 0;
-    }
-    40% {
-      bottom: 5%;
-      opacity: 0;
-    }
-    50% {
-      bottom: 50%;
-      translate: 0 50%;
-      opacity: 1;
-    }
-    90% {
-      bottom: 50%;
-      translate: 0 50%;
-      opacity: 1;
-    }
-  }
-}
+@theme {}
 
 @layer base {
   input[type="number"]::-webkit-inner-spin-button,
