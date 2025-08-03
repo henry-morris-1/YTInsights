@@ -28,8 +28,8 @@
     }
 </style>
 
-<div style="--dial-value: {value}" class="relative w-3/4 p-[10%] aspect-square rounded-full bg-conic-[theme(colors.yellow.500)_0%,theme(colors.green.500)_33.33%,transparent_33.33%,transparent_66.67%,theme(colors.red.500)_66.67%,theme(colors.yellow.500)]">
-    <div class="absolute top-1/2 left-1/2 -translate-y-7/12 -translate-x-1/2 text-[450%] font-black counter"></div>
-    <div class="absolute w-[20%] aspect-square rounded-full bg-white animate-dial-move [offset-path:circle(43.75%_at_50%_50%)]"></div>
+<div style="--dial-value:{value}" class="relative w-full [container-type:size] p-[12%] aspect-square rounded-full bg-conic-[theme(colors.yellow.500)_0%,theme(colors.green.500)_33.33%,transparent_33.33%,transparent_66.67%,theme(colors.red.500)_66.67%,theme(colors.yellow.500)]">
     <div class="w-full aspect-square rounded-full bg-neutral-900"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-y-7/12 -translate-x-1/2 text-[45cqi] font-black counter"></div>
+    <div class="absolute w-[20%] aspect-square rounded-full bg-white animate-dial-move [offset-path:circle(43.75%_at_50%_50%)]"></div>
 </div>

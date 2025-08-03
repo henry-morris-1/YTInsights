@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
-@theme {}
+@theme {
+  --font-yt: Roboto, Arial, sans-serif;
+}
 
 @layer base {
   input[type="number"]::-webkit-inner-spin-button,
