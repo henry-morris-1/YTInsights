@@ -7,7 +7,7 @@
 </script>
 
 <div class="p-5 w-screen max-w-[1000px] grid grid-cols-1 lg:grid-cols-3">
-    <div class="bg-teal-200 p-5 flex items-center justify-center">
+    <div class="border border-teal-500 p-5 flex items-center justify-center">
         <div class="w-full max-w-[500px]">
             <RadialGague value={75} />
         </div>
