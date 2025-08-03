@@ -24,9 +24,6 @@
     }, 5000);
 </script>
 <style>
-    .animate-rise-a {
-        animation: 10s ease infinite;
-    }
     @keyframes rise-a {
         0%, 100% {
             bottom: 50%;
@@ -47,10 +44,10 @@
             opacity: 0;
         }
     }
-
-    .animate-rise-b {
-        animation: 10s ease infinite;
+    .animate-rise-a {
+        animation: rise-a 10s ease infinite;
     }
+
     @keyframes rise-b {
         0%, 100% {
             bottom: 95%;
@@ -70,6 +67,9 @@
             translate: 0 50%;
             opacity: 1;
         }
+    }
+    .animate-rise-b {
+        animation: rise-b 10s ease infinite;
     }
 </style>
 
