@@ -1,11 +1,29 @@
 <script>
     let { children } = $props();
 </script>
+<style>
+    @property --angle {
+        syntax: '<angle>';
+        inherits: false;
+        initial-value: 0deg;
+    }
+    @keyframes rotate-border {
+        from { --angle: 0deg; }
+        to { --angle: 360deg; }
+    }
 
-<div class="relative rounded-4xl overflow-hidden">
-    <div class="p-0.5 after:content-[''] after:block after:absolute after:-inset-full after:m-auto after:aspect-square after:-z-1 after:animate-[spin_2s_linear_infinite] after:bg-conic/decreasing after:from-violet-700 after:via-lime-300 after:to-violet-700">
-        <div class="p-15 bg-neutral-900 rounded-4xl">
-            {@render children()}
-        </div>
+    .container {
+        &::before {
+            animation: rotate-border 2s linear infinite;
+        }
+        &::after {
+            animation: rotate-border 2s linear infinite;
+        }
+    }
+</style>
+
+<div class="container relative h-40 before:content-[''] before:absolute before:inset-0 before:rounded-4xl before:blur-lg before:opacity-100 before:bg-conic-[from_var(--angle)_in_oklch_decreasing_hue,_theme(colors.violet.700)_0%,_theme(colors.lime.300)_50%,_theme(colors.violet.700)_100%] after:content-[''] after:absolute after:inset-0 after:rounded-4xl after:bg-conic-[from_var(--angle)_in_oklch_decreasing_hue,_theme(colors.violet.700)_0%,_theme(colors.lime.300)_50%,_theme(colors.violet.700)_100%]">
+    <div class="absolute inset-1 z-1 rounded-4xl bg-neutral-900">
+        {@render children()}
     </div>
 </div>
