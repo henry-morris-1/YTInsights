@@ -1,5 +1,5 @@
 <script>
-    let { children, attribution } = $props();
+    let { children, attribution } = $props()
 </script>
 
 <div class="p-6 bg-neutral-700 rounded-lg font-semibold">

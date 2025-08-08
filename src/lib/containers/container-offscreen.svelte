@@ -1,9 +1,9 @@
 <script>
-    import ChevronRight from '@lucide/svelte/icons/chevron-right';
+    import ChevronRight from '@lucide/svelte/icons/chevron-right'
     import ChevronLeft from '@lucide/svelte/icons/chevron-left'
 
-    let { children } = $props();
-    let open = $state(true);
+    let { children } = $props()
+    let open = $state(true)
 </script>
 
 <div class="absolute h-screen w-screen max-w-[400px] left-0 {open ? '' : '-translate-x-full'} transition-all">

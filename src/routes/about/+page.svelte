@@ -1,11 +1,11 @@
 <script>
-    import Section from "$lib/text/section.svelte";
-    import Subsection from "$lib/text/subsection.svelte";
-    import Heading from "$lib/text/heading.svelte";
-    import Subheading from "$lib/text/subheading.svelte";
-    import Paragraph from "$lib/text/paragraph.svelte";
-    import BlockQuote from "$lib/text/block-quote.svelte";
-    import CodeBlock from "$lib/text/code-block.svelte";
+    import Section from "$lib/text/section.svelte"
+    import Subsection from "$lib/text/subsection.svelte"
+    import Heading from "$lib/text/heading.svelte"
+    import Subheading from "$lib/text/subheading.svelte"
+    import Paragraph from "$lib/text/paragraph.svelte"
+    import BlockQuote from "$lib/text/block-quote.svelte"
+    import CodeBlock from "$lib/text/code-block.svelte"
 </script>
 
 <div class="mt-5 w-screen max-w-[900px]">

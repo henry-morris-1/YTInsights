@@ -1,5 +1,5 @@
 <script>
-    let { children } = $props();
+    let { children } = $props()
 </script>
 
 <h2 class="text-2xl font-bold mb-2">

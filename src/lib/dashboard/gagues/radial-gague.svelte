@@ -1,5 +1,5 @@
 <script>
-    let { value } = $props();
+    let { value } = $props()
 </script>
 <style>
     @keyframes dial-move {

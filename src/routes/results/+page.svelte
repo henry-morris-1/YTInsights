@@ -1,9 +1,9 @@
 <script>
-	import ContainerCentered from "$lib/containers/container-centered.svelte";
-	import ContainerOffscreen from "$lib/containers/container-offscreen.svelte";
-	import RadialGague from "$lib/dashboard/gagues/radial-gague.svelte";
-	import Precontent from "$lib/dashboard/visual-mockup/precontent.svelte";
-	import VisualMockup from "$lib/dashboard/visual-mockup/visual-mockup.svelte";
+	import ContainerCentered from "$lib/containers/container-centered.svelte"
+	import ContainerOffscreen from "$lib/containers/container-offscreen.svelte"
+	import RadialGague from "$lib/dashboard/gagues/radial-gague.svelte"
+	import Precontent from "$lib/dashboard/visual-mockup/precontent.svelte"
+	import VisualMockup from "$lib/dashboard/visual-mockup/visual-mockup.svelte"
 </script>
 
 <div class="p-5 w-screen max-w-[1000px] grid grid-cols-1 lg:grid-cols-3">

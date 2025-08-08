@@ -1,7 +1,7 @@
 <script>
-	import { goto } from "$app/navigation";
-	import ContainerCentered from "$lib/containers/container-centered.svelte";
-	import ContainerHighlight from "$lib/containers/container-highlight.svelte";
+	import { goto } from "$app/navigation"
+	import ContainerCentered from "$lib/containers/container-centered.svelte"
+	import ContainerHighlight from "$lib/containers/container-highlight.svelte"
 
     const phrases = [
         'Scanning thumbnail...',
@@ -9,19 +9,19 @@
         'Comparing against recent trends...',
         'Calculating probabilities...',
         'Creating suggestions for improvements...'
-    ];
-    let a = 0;
-    let b = 1;
+    ]
+    let a = 0
+    let b = 1
 
     setInterval(() => {
-        b = (b + 2) % phrases.length;
-    }, 10000);
+        b = (b + 2) % phrases.length
+    }, 10000)
     setTimeout(() => {
-        a = (a + 2) % phrases.length;
+        a = (a + 2) % phrases.length
         setInterval(() => {
-            a = (a + 2) % phrases.length;
-        }, 10000);
-    }, 5000);
+            a = (a + 2) % phrases.length
+        }, 10000)
+    }, 5000)
 </script>
 <style>
     @keyframes rise-a {

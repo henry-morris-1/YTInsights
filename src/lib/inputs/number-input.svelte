@@ -1,5 +1,5 @@
 <script>
-    let { id, label } = $props();
+    let { id, label } = $props()
 </script>
 
 <div class="relative">

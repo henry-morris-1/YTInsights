@@ -1,5 +1,5 @@
 <script>
-    import EllipsisVertical from "@lucide/svelte/icons/ellipsis-vertical";
+    import EllipsisVertical from "@lucide/svelte/icons/ellipsis-vertical"
 </script>
 
 <div class="max-w-full max-h-full gap-[2%] flex [container-type:size] aspect-4/1 font-yt select-none">

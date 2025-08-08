@@ -1,7 +1,7 @@
 <script>
-    import EllipsisVertical from "@lucide/svelte/icons/ellipsis-vertical";
+    import EllipsisVertical from "@lucide/svelte/icons/ellipsis-vertical"
 
-    let { title, channelName, imgUrl, videoLength, views } = $props();
+    let { title, channelName, imgUrl, videoLength, views } = $props()
 </script>
 
 <div class="max-w-full max-h-full gap-[2%] flex [container-type:size] aspect-4/1 font-yt select-none">
