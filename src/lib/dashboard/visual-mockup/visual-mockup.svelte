@@ -4,7 +4,7 @@
     let { title, channelName, imgUrl, videoLength, views } = $props()
 </script>
 
-<div class="max-w-full max-h-full gap-[2%] flex [container-type:size] aspect-4/1 font-yt select-none">
+<div class="max-w-full max-h-full my-[1%] gap-[2%] flex [container-type:size] aspect-4/1 font-yt select-none">
     <div class="w-[42%]">
         <div class="relative [container:size] aspect-video">
             <img src={imgUrl} alt="thumbnail" class="h-full w-full rounded-[2cqw] object-cover" />
