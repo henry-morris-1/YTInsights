@@ -8,6 +8,10 @@ declare global {
 		// interface PageState {}
 		// interface Platform {}
 	}
+
+	interface DocumentEventMap<T> {
+		'onclickout'?: () => boolean
+	}
 }
 
-export {};
+export {}
