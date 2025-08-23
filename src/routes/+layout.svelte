@@ -1,12 +1,12 @@
 <script lang="ts">
-	import '../app.css'
-	import Header from '$lib/header/header.svelte'
+    import '../app.css'
+    import Header from '$lib/header/header.svelte'
 
-	let { children } = $props()
+    let { children } = $props()
 </script>
 
 <Header />
 
-<main class="flex flex-col items-center">
-	{@render children()}
+<main>
+    {@render children()}
 </main>

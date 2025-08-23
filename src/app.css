@@ -5,6 +5,7 @@
 @plugin '@tailwindcss/typography';
 
 @theme {
+  --font-serif: Times New Roman, serif;
   --font-yt: Roboto, Arial, sans-serif;
 }
 
