@@ -8,7 +8,7 @@
 	import VisualMockup from "$lib/dashboard/visual-mockup/visual-mockup.svelte"
 </script>
 
-<div class="p-5 w-screen max-w-[1000px]">
+<div class="p-5 w-screen max-w-full">
     <Tabs>
         <Tab isOpen>
             {#snippet title()}

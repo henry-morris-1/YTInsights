@@ -1,1 +1,1 @@
-<hr class="border-neutral-300" />
+<hr class="border-light-muted" />

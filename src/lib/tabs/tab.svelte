@@ -11,6 +11,6 @@
     })
 </script>
 
-<button onclick={() => isOpen = true} role="tab" id={id} class="px-2 py-1 rounded-md cursor-pointer transition-all duration-250 {isOpen ? 'bg-neutral-500' : 'bg-transparent'}">
+<button onclick={() => isOpen = true} role="tab" id={id} class="px-2 py-1 rounded-md cursor-pointer transition-all duration-250 {isOpen ? 'bg-medium' : 'bg-transparent'}">
     {@render title()}
 </button>

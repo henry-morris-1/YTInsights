@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,var(--hue)..900;1,var(--hue)..900&display=swap');
 
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
@@ -7,6 +7,14 @@
 @theme {
   --font-serif: Times New Roman, serif;
   --font-yt: Roboto, Arial, sans-serif;
+
+  --chroma: 0.01;
+  --hue: 112;
+  --color-dark: oklch(0.208 var(--chroma) var(--hue));
+  --color-dark-muted: oklch(0.372 var(--chroma) var(--hue));
+  --color-medium: oklch(0.554 var(--chroma) var(--hue));
+  --color-light: oklch(0.968 var(--chroma) var(--hue));
+  --color-light-muted: oklch(0.869 var(--chroma) var(--hue));
 }
 
 @layer base {

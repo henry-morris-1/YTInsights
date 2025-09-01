@@ -12,11 +12,9 @@
 <div class="mt-5">
     <Title>
         About Us
-        <img src="https://web.archive.org/web/20091027045106im_/http://es.geocities.com/ryc_qa_reciclavidrio/libros24.gif" alt="" />
     </Title>
 
     <Heading>
-        <img src="https://web.archive.org/web/20091027141436im_/http://geocities.com/homepagedoti/Caveiras/SK029.GIF" alt="" />
         Psychological Background
     </Heading>
     <Section>

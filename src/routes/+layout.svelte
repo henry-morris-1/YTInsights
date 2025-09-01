@@ -5,8 +5,11 @@
     let { children } = $props()
 </script>
 
-<Header />
+<div class="w-[800px]">
+    <Header />
 
-<main>
-    {@render children()}
-</main>
+    <main class="flex flex-col items-center">
+        {@render children()}
+    </main>
+</div>
+
