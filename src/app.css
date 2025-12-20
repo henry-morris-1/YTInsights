@@ -8,8 +8,8 @@
   --font-serif: Times New Roman, serif;
   --font-yt: Roboto, Arial, sans-serif;
 
-  --chroma: 0.01;
-  --hue: 150;
+  --chroma: 0.015;
+  --hue: 75;
   --color-dark: oklch(0.208 var(--chroma) var(--hue));
   --color-dark-muted: oklch(0.372 var(--chroma) var(--hue));
   --color-medium: oklch(0.554 var(--chroma) var(--hue));
