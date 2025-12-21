@@ -1,6 +1,4 @@
 <script>
-	import Avatar from "./avatar.svelte"
-    import Coin from "./coin.svelte"
 </script>
 
 <header class="p-3 flex justify-between">
