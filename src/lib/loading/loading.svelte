@@ -1,5 +1,4 @@
 <script>
-	import { goto } from "$app/navigation"
 	import ContainerCentered from "$lib/containers/container-centered.svelte"
 	import ContainerHighlight from "$lib/containers/container-highlight.svelte"
 
@@ -73,15 +72,13 @@
     }
 </style>
 
-<ContainerCentered>
-    <div class="w-screen max-w-[600px] text-2xl font-semibold">
-        <ContainerHighlight>
-            <div class="absolute start-15.5 animate-rise-a">
-                {phrases[a]}
-            </div>
-            <div class="absolute start-15.5 animate-rise-b">
-                {phrases[b]}
-            </div>
-        </ContainerHighlight>
-    </div>
-</ContainerCentered>
+<div class="w-screen max-w-[600px] text-2xl font-semibold">
+    <ContainerHighlight>
+        <div class="absolute start-15.5 animate-rise-a">
+            {phrases[a]}
+        </div>
+        <div class="absolute start-15.5 animate-rise-b">
+            {phrases[b]}
+        </div>
+    </ContainerHighlight>
+</div>

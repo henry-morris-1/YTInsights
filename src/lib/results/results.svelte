@@ -1,14 +1,14 @@
 <script>
 	import ContainerCentered from "$lib/containers/container-centered.svelte"
 	import ContainerOffscreen from "$lib/containers/container-offscreen.svelte"
-	import Precontent from "$lib/dashboard/visual-mockup/precontent.svelte"
-    import RadialGague from "$lib/dashboard/gagues/radial-gague.svelte"
+	import Precontent from "$lib/results/visual-mockup/precontent.svelte"
+    import RadialGague from "$lib/results/gagues/radial-gague.svelte"
     import Tab from "$lib/tabs/tab.svelte"
     import Tabs from "$lib/tabs/tabs.svelte"
-	import VisualMockup from "$lib/dashboard/visual-mockup/visual-mockup.svelte"
+	import VisualMockup from "$lib/results/visual-mockup/visual-mockup.svelte"
 </script>
 
-<div class="p-5 w-screen max-w-full">
+<div class="">
     <Tabs>
         <Tab isOpen>
             {#snippet title()}
