@@ -3,8 +3,8 @@
 </script>
 
 <div class="w-full mb-4">
-    <h2 class="flex items-end justify-between text-3xl font-bold">
+    <h1 class="text-4xl font-bold">
         {@render children()}
-    </h2>
-    <div class="h-0.5 w-full bg-white"></div>
+    </h1>
+    <div class="h-0.5 w-full bg-neutral-300"></div>
 </div>

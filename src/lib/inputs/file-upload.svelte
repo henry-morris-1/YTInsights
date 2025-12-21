@@ -6,6 +6,5 @@
 
 <div class="cursor-default py-4 px-3 rounded-md ring-1 ring-neutral-500 flex justify-between">
     <span class="font-light">{label}</span>
-    <img src="https://blob.gifcities.org/gifcities/3VDMVN7ODMSQ5IGQYDISGPTDXWY5CNSW.gif" alt="" />
     <Upload />
 </div>

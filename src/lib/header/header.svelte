@@ -3,15 +3,24 @@
     import Coin from "./coin.svelte"
 </script>
 
-<header class="p-3 flex justify-between">
-    <div></div>
+<header class="z-1000 sticky top-0 left-0 right-0 h-20 p-5 flex gap-4 justify-between backdrop-blur-md">
+    <div>
 
-    <div class="flex gap-1 items-center">
-        <div class="text-end">
-            250
-        </div>
-        <div class="h-full aspect-square">
-            <img src="https://web.archive.org/web/20010811041831if_/http://hk.geocities.com:80/icehp88/images/coin.gif" alt="coin" />
-        </div>
     </div>
+    <div>
+
+    </div>
+    <div class="flex gap-6">
+        <div class="flex gap-3 items-center">
+            <div class="text-end leading-4">
+                <div class="text-xl font-bold leading-5">250</div>
+                Credits
+            </div>
+            <div class="h-full p-1 aspect-square">
+                <Coin />
+            </div>
+        </div>
+        <Avatar username="username" pfpSrc="https://cdn.pfps.gg/pfps/56355-greg.jpeg" />
+    </div>
+    
 </header>
